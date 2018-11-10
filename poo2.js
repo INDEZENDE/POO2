@@ -1,11 +1,22 @@
 class Pata {
   constructor (material){
-    this.materialPataChido = material;
+    // this.materialPataChido = material;
+    this.materialPata = material;
+  }
+
+  // getMaterial (){
+  //   return `*${this.materialPataChido}+`;
+  // }
+
+  getMaterialOriginal (){
+    return `${this.materialPata}`;
   }
 
   getMaterial (){
-    return `*${this.materialPataChido}+`;
-  }}
+    return `*${this.materialPata.toUpperCase()}+`;
+  }
+}
+
 
 // carro.llanta[0].inflar();
 
@@ -54,32 +65,37 @@ class Mesa {
       // pata.Material = 'cEra';
       // pata.mmaterial = 'cEra';
 
+      // pata.materialPata = pata.materialPata.toUpperCase();
+
       console.log(`info aux - pata [ ${pata.constructor.name} ]`);
       // console.log(`info material - pata [ ${pata.material} ]`);
-      console.log(`info material - pata [ *${pata.materialPata}* ]`);
+      console.log(`info material - pata [ *${pata.materialPata.toUpperCase()}* ]`);
       console.log(`info material - pata [ ${pata.getMaterial()} ]`);
       console.log(`info 2 - datos pata [ ${this.patas.length} ]`);
 
-      console.log(`info material2 - pata [ *${pata.materialPata}+ ]`);
+      console.log(`info material2 - pata [ *${pata.materialPata.toUpperCase()}+ ]`);
       console.log(`info material2 - pata [ ${pata.getMaterial()} ]`);
 
-      console.log(`info material3 - pata [ *${pata.materialPata}+ ]`);
+      console.log(`info material3 - pata [ *${pata.materialPata.toUpperCase()}+ ]`);
       console.log(`info material3 - pata [ ${pata.getMaterial()} ]`);
 
-      console.log(`info material4 - pata [ *${pata.materialPata}+ ]`);
+      console.log(`info material4 - pata [ *${pata.materialPata.toUpperCase()}+ ]`);
       console.log(`info material4 - pata [ ${pata.getMaterial()} ]`);
 
-      console.log(`info material5 - pata [ *${pata.materialPata}+ ]`);
+      console.log(`info material5 - pata [ *${pata.materialPata.toUpperCase()}+ ]`);
       console.log(`info material5 - pata [ ${pata.getMaterial()} ]`);
 
-      console.log(`info material6 - pata [ *${pata.materialPata}+ ]`);
+      console.log(`info material6 - pata [ *${pata.materialPata.toUpperCase()}+ ]`);
       console.log(`info material6 - pata [ ${pata.getMaterial()} ]`);
 
-      console.log(`info material7 - pata [ *${pata.materialPata}+ ]`);
+      console.log(`info material7 - pata [ *${pata.materialPata.toUpperCase()}+ ]`);
       console.log(`info material7 - pata [ ${pata.getMaterial()} ]`);
 
-      console.log(`info material8 - pata [ *${pata.materialPata}+ ]`);
+      console.log(`info material8 - pata [ *${pata.materialPata.toUpperCase()}+ ]`);
       console.log(`info material8 - pata [ ${pata.getMaterial()} ]`);
+
+      console.log(`info materialf  - pata [ ${pata.getMaterialOriginal()} ]`);
+      
     });
 
   }
